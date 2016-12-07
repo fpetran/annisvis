@@ -1,0 +1,15 @@
+[API_keys]
+maps=<YOUR GOOGLE MAPS API KEY HERE>
+geocoder=<YOUR GOOGLE GEOCODER API KEY HERE>
+
+[Server]
+annis_service=http://<YOUR_SERVER_URL_HERE>/annis-service/annis
+site_url=http://<YOUR_SERVER_URL_HERE>/annisvis
+
+[Application]
+app_path=/srv/annisvis/cgi-bin
+locations_file=locations.json
+
+[Annotations]
+location_key=place
+location_key_fallback=library

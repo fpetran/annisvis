@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+.table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.tableCell {
+    display: table-cell;
+}
+#map_canvas { width: 80% }
+#toolBar {
+    width: 20%;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+/* tabs */
+.tabs ul {
+    list-style: none;
+}
+.tabs ul li {
+    float: left;
+    background: #eee;
+    border: 1px #aaa solid;
+    border-bottom: none;
+    margin-right: 10px;
+    padding: 5px;
+}
+.tabs ul li.activeTab {
+    margin-bottom: -1px;
+    padding-bottom: 6px;
+}
+.tabs ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+#tabInner {
+    clear: both;
+    border: 1px solid #aaa;
+    height: 800px;
+    overflow: hidden;
+    background: #eee;
+}
+.tabContent {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* input area */
+div#inputBox {
+    display: flex;
+}
+button#queryOk {
+    margin: 0 auto;
+}
+/* textlist */
+div#textlistbox {
+    overflow: scroll;
+    padding: 5px 5px 5px 5px;
+}
+.textListEntry {
+    margin: 5px 5px 5px 5px;
+    font-size: small;
+    border: 1px solid black;
+    background-color: white;
+}
+.metaSpan {
+    margin-left: 1ex;
+    margin-right: 1ex;
+    display: block;
+}
+.metaSpan[key="Lat"],.metaSpan[key="Lng"] {
+    display: none;
+}
+.metaSpan:before {
+    content: attr(key)": ";
+}
+/* time slider */
+input[type=range][orient=vertical] {
+    writing-mode: bt-lr; /* ie */
+    -webkit-appearance: slider-vertical; /* webkit */
+    width: 8px;
+    height: 200px;
+    padding: 0 5px;
+}
+/* query list */
+#queryList {
+    overflow: auto;
+    border: 1px solid black;
+}
+div.queryListEntry {
+    border: 1px solid black;
+    display: table;
+    font-size: small;
+    flex-direction: column;
+    justify-content: center;
+}
+span.queryResultDescription {
+    display: table-cell;
+    width: 40%;
+    border-left: 1px dotted black;
+}
+span.queryString {
+    display: table-cell;
+    width: 50%;
+}
+div.queryColor {
+    display: table-cell;
+    height: 100%;
+    width: 10%;
+}
+/* recenter button */
+#reCenterBox {
+    width: 100%;
+}
+#reCenter {
+    margin: 0 auto;
+    display: block;
+}
+/* marker list in text entries */
+.markerList {
+    display: none;
+}
+.markerList.openedMarker {
+    display: block;
+}
+
+#map_canvas > div {
+    position: static !important; /* <-- required for firefox, otherwise the map is off screen */
+}
+

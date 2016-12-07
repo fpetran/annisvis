@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <link rel="stylesheet" href="%(site_url)s/site/jquery.contextmenu.css">
+    <link rel="stylesheet" href="%(site_url)s/site/annisvis.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=%(maps_api_key)s"></script>
+    <script type="text/javascript" src="%(site_url)s/site/oms.min.js"></script>
+    <script type="text/javascript" src="%(site_url)s/site/jquery.contextmenu.js"></script>
+    <script type="text/javascript" src="%(site_url)s/annisvis.js"></script>
+    <title>AnnisVis - geo-visualization of corpus data</title>
+</head>
+<body onload="initialize()">
+<div class="table">
+    <div id="toolBar" class="tableCell">
+        <div class="tabs">
+            <ul>
+                <li class="activeTab"><a href="#search">Search</a></li>
+                <li><a href="#texts">Places</a></li>
+            </ul>
+        </div>
+        <div id="tabInner">
+            <div id="search" class="tabContent">
+                <div id="searchSettings" class="searchChild">
+                    <input id="relativeScaling"
+                           checked="true"
+                           type="checkbox"
+                           value="relative_scaling">Use global scaling for next search</input>
+                </div>
+                <div id="inputBox" class="searchChild">
+                    <textarea
+                        id="queryInput"
+                        type="text"
+                        rows="4"
+                        name="query"></textarea>
+                    <button id="queryOk">Search</button>
+                </div>
+                <div id="lastQueryBox" class="searchChild">
+                    <div id="queryList"></div>
+                </div>
+            </div>
+            <div id="options" class="tabContent">
+                <p>Options go here</p>
+            </div>
+            <div id="texts" class="tabContent">
+                <div id="textlistbox"></div>
+            </div>
+        </div>
+        <div id="reCenterBox"><button id="reCenter">Re-Center Map</button></div>
+    </div>
+    <div id="map_canvas" class="tableCell"></div>
+</div>
+</body>
+</html>

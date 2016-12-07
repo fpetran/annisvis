@@ -1,0 +1,8 @@
+{
+    "undef" : true,
+    "unused" : true,
+    "sub" : true,
+    "predef" : [
+        "google", "document", "$", "OverlappingMarkerSpiderfier"
+        ]
+}
