@@ -20,20 +20,23 @@ cgi-bin/js - js source files
   command line too to do that
 * you can make it re-code the locations by deleting locations\_cache.json
 
+#Sample Deployment
+* [remvis](http://www.linguistics.rub.de/annisvis)
+
 #Dependencies
 ##JavaScript Libraries
-[Google Maps API](https://developers.google.com/maps/)
-[jquery](https://jquery.com/)
-[jquery.contextmenu](https://github.com/joewalnes/jquery-simple-context-menu)
-[Overlapping Marker Spiderfier](https://github.com/jawj/OverlappingMarkerSpiderfier/)
+* [Google Maps API](https://developers.google.com/maps/)
+* [jquery](https://jquery.com/)
+* [jquery.contextmenu](https://github.com/joewalnes/jquery-simple-context-menu)
+* [Overlapping Marker Spiderfier](https://github.com/jawj/OverlappingMarkerSpiderfier/)
 
 ##Python Libraries
-[jsmin](https://github.com/tikitu/jsmin/)
-[Pillow](https://python-pillow.github.io/)
-[GeoPy](https://github.com/geopy/geopy/)
-[lxml](http://lxml.de/)
+* [jsmin](https://github.com/tikitu/jsmin/)
+* [Pillow](https://python-pillow.github.io/)
+* [GeoPy](https://github.com/geopy/geopy/)
+* [lxml](http://lxml.de/)
 
 ##Other
-[ANNIS](http://corpus-tools.org)
-Apache and mod\_wsgi
-python 2
+* [ANNIS](http://corpus-tools.org)
+* Apache and mod\_wsgi
+* python 2
